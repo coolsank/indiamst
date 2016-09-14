@@ -362,3 +362,7 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
+
+.table-hover > tbody > tr:hover {
+  background-color: #333333;
+}
