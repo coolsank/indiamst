@@ -1,6 +1,6 @@
-function showTemplate(template, data){
+function showTemplate(template, data, js_section){
     var html    = template(data);
-    $('#js-content').html(html);
+    $(js_section).html(html);
 }
 
 $(document).ready(function(){
@@ -8,8 +8,14 @@ $(document).ready(function(){
     var event_album_template = Handlebars.compile(source);
 
     $("#freshers_tab").click(function(){
-        showTemplate(event_album_template,freshers_data);
+        showTemplate(event_album_template,freshers_data,'#js-freshers-content');
     });
 
     $("#freshers_tab").click();
+
+    $("#freshers_tab").click(function(){
+        showTemplate(event_album_template,ganesh_data,'#js-ganesh-content');
+    });
+
+    $("#freshers_tab").click();    
 });

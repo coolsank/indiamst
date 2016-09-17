@@ -14,6 +14,7 @@
 
     <!-- Images_data -->
     <script src="js/freshers_2016_data.js"></script>
+    <script src="js/ganesh_2016_data.js"></script>
 
     <!-- Plugin JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
@@ -95,7 +96,10 @@
                         <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#freshers" id="freshers_tab">Freshers' Bash 2016</a>
+                        <a class="page-scroll" href="#freshers" id="freshers_tab">Freshers' Bash</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#ganesh" id="ganesh_tab">Ganesh Chaturthi</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#cricket">Cricket Tournament</a>
@@ -159,7 +163,13 @@
     
     <!-- Freshers Section -->
     <section id="freshers" class="container content-section text-center">
-        <div class="container-fluid" id="js-content">
+        <div class="container-fluid" id="js-freshers-content">
+        </div>
+    </section>
+
+    <!-- Ganesh Section -->
+    <section id="ganesh" class="container content-section text-center">
+        <div class="container-fluid" id="js-ganesh-content">
         </div>
     </section>
 
@@ -328,7 +338,7 @@
                     </a>
                 </div>
             {{/each}}
-            <p>Photo credits : {{image_credits}}</p>
+            <small>Photo credits : {{image_credits}}</small>
         </div>
     </script>
 
