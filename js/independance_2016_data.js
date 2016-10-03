@@ -1,4 +1,4 @@
-var freshers_data = {
+var independace_data = {
 	album_name : "Independence Day 2016",
 	photo : [
 		{
