@@ -15,6 +15,7 @@
     <!-- Images_data -->
     <script src="js/freshers_2016_data.js"></script>
     <script src="js/ganesh_2016_data.js"></script>
+    <script src="js/independance_2016_data.js"></script>
 
     <!-- Plugin JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
@@ -96,13 +97,13 @@
                         <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
+                        <a class="page-scroll" href="#independance" id="independance_tab">Independance Day</a>
+                    </li>
+                    <li>
                         <a class="page-scroll" href="#freshers" id="freshers_tab">Freshers' Bash</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#ganesh" id="ganesh_tab">Ganesh Chaturthi</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#cricket">Cricket Tournament</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#upcomingevents">Upcoming events</a>
@@ -162,6 +163,12 @@
     </section>
     
     <!-- Freshers Section -->
+    <section id="independance" class="container content-section text-center">
+        <div class="container-fluid" id="js-independance-content">
+        </div>
+    </section>
+
+    <!-- Freshers Section -->
     <section id="freshers" class="container content-section text-center">
         <div class="container-fluid" id="js-freshers-content">
         </div>
@@ -173,48 +180,6 @@
         </div>
     </section>
 
-
-    <!--Rolla Cricket section -->
-    <section id="cricket" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Rolla Cricket Tournament</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <a href="img/cricket_poster.jpg"><img src="img/cricket_poster.jpg" class="img-thumbnail"></a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <p>For all the cricket lovers out there tackling the assignment loads, its time to relax during the weekend playing the sport you love the most.</p>
-                <p>India Association-Missouri S&T along with Rolla Cricket Club will be hosting a 6 on 6 cricket tournament over this weekend. Each team will have 6 members (with upto 4 substitutes).</p>
-                <p>We have a trophy for the Winning team and man of the series. Refreshments will be provided. All the match statistics/ individual scores and wickets will be available on <a href="https://play.google.com/store/apps/details?id=in.chauka.scorekeeper&hl=en">Chauka cricket scorer App</a></p>
-                <p>
-                    <a href="http://goo.gl/fr2Zs1">
-                        <button type="button" class="btn btn-default btn-lg">Register now!</button>
-                    </a>
-                </p>
-                <div class="table-responsive">
-                    <table class="table table-bordered table-hover">
-                        <tr>
-                            <td>Registration deadline</td>
-                            <td>Wednesday September 14, 2016</td>
-                        </tr>
-                        <tr>
-                            <td>Tournament dates</td>
-                            <td>Friday September 16, 2016 to Sunday September 18, 2016</td>
-                        </tr>
-                        <tr>
-                            <td>Entry Fee</td>
-                            <td>$3 per person</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </section>
     
     <!-- Future Events -->
      <section id="upcomingevents" class="container content-section text-center">
@@ -228,28 +193,12 @@
                 <div class="table-responsive">
                     <table class="table table-bordered table-hover">
                         <tr>
-                            <td><a href="#cricket">Rolla Cricket Tournament</a></td>
-                            <td>Saturday, September 17, 2016</td>
-                        </tr>
-                        <tr>
-                            <td>General Body Meeting</td>
-                            <td>Saturday, September 17, 2016</td>
-                        </tr>                        
-                        <tr>
-                            <td>Celebration of Nations</td>
-                            <td>Saturday, September 24, 2016</td>
-                        </tr>
-                        <tr>
-                            <td>Potluck</td>
-                            <td>Saturday, October 01, 2016</td>
-                        </tr>
-                        <tr>
                             <td>Dandia Night</td>
                             <td>Saturday, October 08, 2016</td>
                         </tr>
                         <tr>
                             <td>Diwali Celebrations</td>
-                            <td>Sunday, October 23, 2016</td>
+                            <td>Sunday, October 22, 2016</td>
                         </tr>
                         <tr>
                             <td>Elections for Executive Committee - 2017</td>
@@ -362,7 +311,7 @@
             {{#each photo}}
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <a href={{image_src}} class="thumbnail">
-                        <img data_id="{{@index}}" src={{image_src}} alt={{name}}/>
+                        <img data_id="{{@index}}" src={{image_small}} alt={{name}}/>
                     </a>
                 </div>
             {{/each}}
