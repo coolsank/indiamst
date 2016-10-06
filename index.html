@@ -96,14 +96,34 @@
                     <li>
                         <a class="page-scroll" href="#about">About</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#independance" id="independance_tab">Independance Day</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#freshers" id="freshers_tab">Freshers' Bash</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#ganesh" id="ganesh_tab">Ganesh Chaturthi</a>
+                    <li role="presentation" class="dropdown">
+                        <ul class="dropdown-menu" id="events">
+                            <!-- New Events -->
+                            <li id="diwali_button">
+                                <a class="page-scroll" href="#diwali" id="diwali_button">Diwali Celebrations</a>
+                            </li>
+                            <li id="dandia_button">
+                                <a class="page-scroll" href="#dandia" id="dandia_button">Dandia Night</a>
+                            </li>
+                            <!-- /New Events -->
+
+                            <li role="separator" class="divider"></li>
+                            
+                            <!-- Old Events -->
+                            <li id="independance_button">
+                                <a class="page-scroll" href="#independance" id="independance_tab">Independance Day</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="#freshers" id="freshers_tab">Freshers' Bash</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="#ganesh" id="ganesh_tab">Ganesh Chaturthi</a>
+                            </li>
+                            <!-- /Old Events -->
+                        </ul>
+                        <a href="#" class="dropdown-toggle" id="drop4" data-toggle="dropdown" role="button">
+                            Events <span class="caret"></span>
+                        </a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#upcomingevents">Upcoming events</a>
