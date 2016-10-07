@@ -57,6 +57,7 @@
 
     <!-- Custom CSS -->
     <link href="css/grayscale.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -96,14 +97,34 @@
                     <li>
                         <a class="page-scroll" href="#about">About</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#independance" id="independance_tab">Independance Day</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#freshers" id="freshers_tab">Freshers' Bash</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#ganesh" id="ganesh_tab">Ganesh Chaturthi</a>
+                    <li role="presentation" class="dropdown">
+                        <ul class="dropdown-menu" id="events">
+                            <!-- New Events -->
+                            <li id="diwali_button">
+                                <a class="page-scroll" href="#diwali" id="diwali_button">Diwali Celebrations</a>
+                            </li>
+                            <!-- <li id="dandia_button">
+                                <a class="page-scroll" href="#dandia" id="dandia_button">Dandia Night</a>
+                            </li> -->
+                            <!-- /New Events -->
+
+                            <li role="separator" class="divider"></li>
+                            
+                            <!-- Old Events -->
+                            <li>
+                                <a class="page-scroll" href="#ganesh" id="ganesh_tab">Ganesh Chaturthi</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="#freshers" id="freshers_tab">Freshers' Bash</a>
+                            </li>
+                            <li id="independance_button">
+                                <a class="page-scroll" href="#independance" id="independance_tab">Independance Day</a>
+                            </li>
+                            <!-- /Old Events -->
+                        </ul>
+                        <a href="#" class="dropdown-toggle" id="drop4" data-toggle="dropdown" role="button">
+                            Events <span class="caret"></span>
+                        </a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#upcomingevents">Upcoming events</a>
@@ -161,10 +182,101 @@
             </div>
         </div>
     </section>
-    
-    <!-- Freshers Section -->
-    <section id="independance" class="container content-section text-center">
-        <div class="container-fluid" id="js-independance-content">
+
+    <!-- Diwali Section -->
+    <section id="diwali" class="container content-section text-center">
+        <div class="row">
+            <h2>Diwali Celebrations</h2>
+            <div class="col-lg-6">
+                <a href="img/Diwali_Flyer.jpg">
+                    <img
+                        style="max-width:100%; max-height:500px;"
+                        class="img-thumbnail"
+                        id="diwali_poster"
+                        alt="Diwali Poster by Abhijith Bhushi"
+                        src="img/Diwali_Flyer_small.jpg"
+                    />
+                </a>
+            </div>
+            <div class="col-lg-6">
+                <!-- Thanks to BBilginn [http://bootsnipp.com/bbilginn] for the Timeline snippet -->
+                <div class="timeline-centered">
+                    <article class="timeline-entry">
+                        <div class="timeline-entry-inner">
+                            <time class="timeline-time" datetime="2016-01-10T16:00"><span>04:00 PM</span></time>
+                            <div class="timeline-icon bg-primary">
+                                <i class="entypo-feather"></i>
+                            </div>
+                            <div class="timeline-label">
+                                <h2>Cultural Show</h2>
+                                <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>Leach Theater, Rolla, MO 65401</p>
+                                <!-- <p>Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may.</p> -->
+                            </div>
+                        </div>
+                    </article>
+                    <article class="timeline-entry">
+                        <div class="timeline-entry-inner">
+                            <time class="timeline-time" datetime="2014-01-10T18:15"><span>06:15 PM</span></time>
+                            <div class="timeline-icon bg-primary">
+                                <i class="entypo-suitcase"></i>
+                            </div>
+                            <div class="timeline-label">
+                                <h2>Fireworks</h2>
+                                <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>Havener Lawn</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="timeline-entry">
+                        <div class="timeline-entry-inner">
+                            <time class="timeline-time" datetime="2014-01-10T18:30"><span>06:30 PM</span></time>
+                            <div class="timeline-icon bg-primary">
+                                <i class="entypo-camera"></i>
+                            </div>
+                            <div class="timeline-label">
+                                <h2>Indian Dinner</h2>
+                                <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>St. Pats Ballroom, Havener Center, Rolla, MO 65401</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="timeline-entry begin">
+                        <div class="timeline-entry-inner">
+                            <div class="timeline-icon" style="-webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg);">
+                                <i class="entypo-flight"></i>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <!-- <div class="col-lg-6" style="display:inline-block; vertical-align:middle; float:none;">
+                <p>
+                    Saturday, October 22, 2016
+                </p>
+                <p>
+                    Cultural Show
+                    <br><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>Leach Theater, Rolla, MO 65401
+                    <br><br>Fireworks
+                    <br><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>Havener Lawn
+                    <br><br>Indian Dinner
+                    <br><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>St. Pats Ballroom, Havener Center, Rolla, MO 65401
+                </p>
+                <p>Diwali also known as <i>festival of lights</i> is an ancient Indian festival celebrated to signify the victory of light over darkness.</p>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Dandia Night Section -->
+    <!-- <section id="dandia" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Dandia Night</h2>
+                <p></p>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Ganesh Section -->
+    <section id="ganesh" class="container content-section text-center">
+        <div class="container-fluid" id="js-ganesh-content">
         </div>
     </section>
 
@@ -174,13 +286,12 @@
         </div>
     </section>
 
-    <!-- Ganesh Section -->
-    <section id="ganesh" class="container content-section text-center">
-        <div class="container-fluid" id="js-ganesh-content">
+    <!-- Independace Section -->
+    <section id="independance" class="container content-section text-center">
+        <div class="container-fluid" id="js-independance-content">
         </div>
     </section>
 
-    
     <!-- Future Events -->
      <section id="upcomingevents" class="container content-section text-center">
         <div class="row">
@@ -194,10 +305,10 @@
                     <table class="table table-bordered table-hover">
                         <tr>
                             <td>Dandia Night</td>
-                            <td>Saturday, October 08, 2016</td>
+                            <td>Saturday, October 16, 2016</td>
                         </tr>
                         <tr>
-                            <td>Diwali Celebrations</td>
+                            <td><a class="page-scroll" href="#diwali">Diwali Celebrations</a></td>
                             <td>Sunday, October 22, 2016</td>
                         </tr>
                         <tr>
@@ -271,20 +382,31 @@
                 <h3>Treasurer</h3>
                 <p><a href="mailto:sg7w6@mst.edu">sg7w6@mst.edu</a></p>
             </div>
+            <div class="col-lg-12 text-center">
+                <h2> India Association</h2>
+                <p><a href="mailto:india@mst.edu">india@mst.edu</a></p>
+            </div>
         </div>
         <div class="row">
             <div class="col-lg-12 text-center">
                 <a href="img/IA_Cover.jpg"><img class="img-thumbnail" alt="Holi 2016 PC : Pavithra E. R." src="img/IA_Cover.jpg"></a>
                 <small>(From left to right) Swathi, Vivek, Pavithra, Sudharsan</small>
-                <h2> India Association</h2>
-                <p><a href="mailto:india@mst.edu">india@mst.edu</a>
-                </p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-lg-12 text-center">
                 <ul class="list-inline banner-social-buttons">
                     <li>
-                        <a href="https://www.facebook.com/indiamst/" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Page</span></a>
+                        <a href="https://www.facebook.com/indiamst/" class="btn btn-default btn-lg">
+                            <i class="fa fa-facebook fa-fw"></i> <span class="network-name">Page</span>
+                        </a>
                     </li>
                     <li>
-                        <a href="https://www.facebook.com/groups/indiamst/" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Group</span></a>
+                        <a href="https://www.facebook.com/groups/indiamst/" class="btn btn-default btn-lg">
+                            <i class="fa fa-facebook fa-fw"></i> <span class="network-name">Group</span>
+                        </a>
                     </li>
                 </ul>
             </div>
