@@ -57,6 +57,7 @@
 
     <!-- Custom CSS -->
     <link href="css/grayscale.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -185,12 +186,80 @@
     <!-- Diwali Section -->
     <section id="diwali" class="container content-section text-center">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Diwali Celebrations</h2>
+            <h2>Diwali Celebrations</h2>
+            <div class="col-lg-6">
                 <a href="img/Diwali_Flyer.jpg">
-                    <img class="img-thumbnail" alt="Holi Poster by Abhijith Bhushi" src="img/Diwali_Flyer_small.jpg">
+                    <img
+                        style="max-width:100%; max-height:500px;"
+                        class="img-thumbnail"
+                        id="diwali_poster"
+                        alt="Diwali Poster by Abhijith Bhushi"
+                        src="img/Diwali_Flyer_small.jpg"
+                    />
                 </a>
             </div>
+            <div class="col-lg-6">
+                <div class="timeline-centered">
+                    <article class="timeline-entry">
+                        <div class="timeline-entry-inner">
+                            <time class="timeline-time" datetime="2016-01-10T16:00"><span>04:00 PM</span></time>
+                            <div class="timeline-icon bg-info">
+                                <i class="entypo-feather"></i>
+                            </div>
+                            <div class="timeline-label">
+                                <h2>Cultural Show</h2>
+                                <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>Leach Theater, Rolla, MO 65401</p>
+                                <!-- <p>Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may.</p> -->
+                            </div>
+                        </div>
+                    </article>
+                    <article class="timeline-entry">
+                        <div class="timeline-entry-inner">
+                            <time class="timeline-time" datetime="2014-01-10T18:15"><span>06:15 PM</span></time>
+                            <div class="timeline-icon bg-info">
+                                <i class="entypo-suitcase"></i>
+                            </div>
+                            <div class="timeline-label">
+                                <h2>Fireworks</h2>
+                                <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>Havener Lawn</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="timeline-entry">
+                        <div class="timeline-entry-inner">
+                            <time class="timeline-time" datetime="2014-01-10T18:30"><span>06:30 PM</span></time>
+                            <div class="timeline-icon bg-info">
+                                <i class="entypo-camera"></i>
+                            </div>
+                            <div class="timeline-label">
+                                <h2>Indian Dinner</h2>
+                                <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>St. Pats Ballroom, Havener Center, Rolla, MO 65401</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="timeline-entry begin">
+                        <div class="timeline-entry-inner">
+                            <div class="timeline-icon" style="-webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg);">
+                                <i class="entypo-flight"></i>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <!-- <div class="col-lg-6" style="display:inline-block; vertical-align:middle; float:none;">
+                <p>
+                    Saturday, October 22, 2016
+                </p>
+                <p>
+                    Cultural Show
+                    <br><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>Leach Theater, Rolla, MO 65401
+                    <br><br>Fireworks
+                    <br><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>Havener Lawn
+                    <br><br>Indian Dinner
+                    <br><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>St. Pats Ballroom, Havener Center, Rolla, MO 65401
+                </p>
+                <p>Diwali also known as <i>festival of lights</i> is an ancient Indian festival celebrated to signify the victory of light over darkness.</p>
+            </div> -->
         </div>
     </section>
 
@@ -238,7 +307,7 @@
                             <td>Saturday, October 16, 2016</td>
                         </tr>
                         <tr>
-                            <td>Diwali Celebrations</td>
+                            <td><a class="page-scroll" href="#diwali">Diwali Celebrations</a></td>
                             <td>Sunday, October 22, 2016</td>
                         </tr>
                         <tr>
