@@ -255,3 +255,13 @@
                         filter: alpha(opacity=60);
                     }
 /*End of Custom CSS for Timeline*/
+
+.gold_sponsor {
+    max-height: 100px;
+    /*min-height: 100px;*/
+}
+
+.platinum_sponsor {
+    max-height: 200px;
+    /*min-height: 200px;*/
+}
