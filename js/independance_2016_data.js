@@ -1,5 +1,5 @@
 var independace_data = {
-	album_name : "Independence Day 2017",
+	album_name : "Republic Day 2017",
 	photo : [
 		{
 			image_src : "img/independance/ind_1.jpg",
